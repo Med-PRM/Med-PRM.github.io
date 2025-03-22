@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Agent Laboratory: Using LLMs as Research Assistants">
+  <meta name="keywords" content="automated research, LLM research, LLM coding, autoML, autonomous research LLM">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Laboratory</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <link rel="icon" href="./favicon.ico">
+
+  <meta property="og:site_name" content="Agent Laboratory: Using LLMs as Research Assistants" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="Agent Laboratory: Using LLMs as Research Assistants" />
+  <meta property="og:description" content="by Samuel Schmidgall at JHU" />
+  <meta property="og:url" content="https://agentlaboratory.github.io/" />
+  <meta property="og:image" content="https://agentlaboratory.github.io/static/images/preview_srt.gif" />
+  <meta property="og:image:secure" content="https://agentlaboratory.github.io/static/images/preview_srt.gif" />
+  <meta property="og:video" content="" />
+  <meta property="og:video:secure" content="" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+
+  <meta property="article:publisher" content="https://agentlaboratory.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Agent Laboratory: Using LLMs as Research Assistants" />
+  <meta name="twitter:description" content="by Samuel Schmidgall at JHU " />
+  <meta name="twitter:url" content="https://agentlaboratory.github.io/" />
+  <meta name="twitter:image" content="https://agentlaboratory.github.io/static/images/preview_srt.gif" />
+  <meta name="twitter:site" content="@SRSchmidgall" />
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:player" content="" />
+  <meta name="twitter:player:width" content="1280" />
+  <meta name="twitter:player:height" content="720" />
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-two-thirds is-centered has-text-centered">
+          <h1 class="title is-1 publication-title">Agent Laboratory:</h1>
+          <h2 class="subtitle is-2 publication-subtitle">Using LLM Agents as Research Assistants</h2>
+          <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
+            <img src="./static/images/logo_jh.jpg" alt="Secondary Logo" style="width: 45%;">
+          </div>
+          <h2 class="subtitle is-5 publication-subtitle">Samuel Schmidgall</h2>
+            <div class="publication-links">
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="index.html"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="fa fa-globe"></i>
+                  </span>
+                  <span>Homepage</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-two-thirds has-text-centered">
+            <img src="resources/imgs/Agent-Laboratory.png" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+<section class="section">
+  <div class="container">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recently, major progress has been made toward automating complex tasks that traditionally require a team of humans, including solving repository-level GitHub issues and training machine learning models to solve Kaggle challenges. These systems not only demonstrate high performance, but are also being translated into tools that improve human productivity. However, to date, there is an absence of tools that can assist human researchers similar to code assistants, such as GitHub Copilot and Cursor AI. Toward this, we introduce Agent Laboratory, an open-source large language model (LLM) agent framework for accelerating the individual's ability to perform research, specifically in the machine learning domain.  Unlike previous work, where agents produce their own research topics, this work aims to function as a tool to assist human scientists to perform their own research ideas using language agents, rather than automate the entire process. Agent Laboratory takes a human-produced research idea as input and outputs a code repository and a research report.  This is accomplished through the use of specialized agents driven by LLMs that collaborate to perform research based on the human's preference for the agent's involvement.  In order to accommodate all users, Agent Laboratory is compute flexible, where various levels of resources can be allocated based on the individual’s access to compute (e.g. CPU, GPU, memory) and model inference budget (open-source or closed-source LLM back-ends). We hope Agent Laboratory enables researchers to allocate more effort toward creative ideation and experiment design rather than low-level coding and writing, and ultimately accelerate scientific discovery.
+         
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Video Introduction</h2>
+          <div id="youtube-video" class="content has-text-justified">
+            <iframe id="youtube-video-frame" src="https://www.youtube.com/embed/OO2kPK5-qno"></iframe>
+            </iframe>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Overview</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <p>
+            First and foremost, Agent Laboratory is meant to assist you as the human researcher toward implementing your research ideas. You are the pilot. 
+          </p>
+          <p>
+            Agent Laboratory consists of three primary phases that systematically guide the research process: (1) Literature Review, (2) Experimentation, and (3) Report Writing. During each phase, specialized agents driven by LLMs collaborate to accomplish distinct objectives, integrating external tools like arXiv, Hugging Face, Python, and LaTeX to optimize outcomes. This structured workflow begins with the independent collection and analysis of relevant research papers, progresses through collaborative planning and data preparation, and results in automated experimentation and comprehensive report generation. Details on specific agent roles and their contributions across these phases are discussed in the paper. The modular design ensures compute flexibility, accommodating diverse resource availability while maintaining efficiency in generating high-quality research artifacts.
+          </p>
+          <!-- Example of how to insert an image -->
+          <img src="resources/imgs/Agent-Lab-Workflow.png" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
+          <!-- You can add more <img> tags as needed -->
+          <p>
+            The presented solver mle-solver aims to act as a general purpose ML code solver. This tool operates by maintaining a collection of top programs which are iteratively modified in order to improve the experimental results according to a scoring function. mle-solver takes as input the following: (1) task instructions, (2) command descriptions, and (3) distilled knowledge. Integrating this information, one of two coding commands are produced by the solver, REPLACE or EDIT. The REPLACE command entirely replaces all of the current code with new code. The EDIT command is usable after the first iteration to make sure code exists, and replaces lines indexed n through m of the current code with as many lines of new code as is produced by the solver. After a code command is executed, the new program is passed through a compiler to check for runtime errors. If it successfully compiles, a score is returned and the list of top programs is updated if the score is higher than the existing programs. If the code does not compile, the agent attempts to repair the code for $N_{rep}$ tries ($N_{rep}$=3 in our experiments) before returning an error and moving on to a new code replacement. In both cases, the agent is encouraged to reflect on its previous command and output to provide as input to the next step.
+          </p>
+          <!-- Example of how to insert an image -->
+          <img src="resources/imgs/mlebench_pf.png" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
+          <!-- You can add more <img> tags as needed -->
+          <p>
+            asdlkmas
+          </p>
+          <!-- Example of how to insert an image -->
+          <img src="resources/imgs/paper_workflow.png" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
+          <!-- You can add more <img> tags as needed -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div id="citation-ref" class="container content">
+    <h2 class="titile">BibTeX</h2>
+    <pre><code>@inproceedings{schmidgall2024AgentLaboratory,
+      author    = {Samuel Schmidgall},
+      title     = {Agent Laboratory: Using LLMs as Research Assistants},
+      year      = {2024},
+    }</code></pre>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div id="examples-goto" class="container content">
+    <h2 class="titile">Examples</h2>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

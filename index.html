@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="AgentRxiv: Towards Collaborative Autonomous
+Research">
+  <meta name="keywords" content="automated research, LLM research, LLM coding, autoML, autonomous research LLM">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgentRxiv</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <link rel="icon" href="./favicon.ico">
+
+  <meta property="og:site_name" content="AgentRxiv: Towards Collaborative Autonomous
+Research" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="AgentRxiv: Towards Collaborative Autonomous
+Research" />
+  <meta property="og:description" content="by Samuel Schmidgall at JHU" />
+  <meta property="og:url" content="https://agentlaboratory.github.io/" />
+  <meta property="og:image" content="https://agentlaboratory.github.io/static/images/preview_srt.gif" />
+  <meta property="og:image:secure" content="https://agentlaboratory.github.io/static/images/preview_srt.gif" />
+  <meta property="og:video" content="" />
+  <meta property="og:video:secure" content="" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+
+  <meta property="article:publisher" content="https://agentlaboratory.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AgentRxiv: Towards Collaborative Autonomous
+Research" />
+  <meta name="twitter:description" content="by Samuel Schmidgall at JHU " />
+  <meta name="twitter:url" content="https://agentlaboratory.github.io/" />
+  <meta name="twitter:image" content="https://agentlaboratory.github.io/static/images/preview_srt.gif" />
+  <meta name="twitter:site" content="@SRSchmidgall" />
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:player" content="" />
+  <meta name="twitter:player:width" content="1280" />
+  <meta name="twitter:player:height" content="720" />
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-two-thirds is-centered has-text-centered">
+          <h1 class="title is-1 publication-title">AgentRxiv:</h1>
+          <h2 class="subtitle is-2 publication-subtitle">Towards Collaborative Autonomous
+Research</h2>
+          <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
+            <img src="./static/images/logos.png" alt="Primary Logo" style="width: 45%;height: 90%">
+          </div>
+          <h2 class="subtitle is-5 publication-subtitle">Samuel Schmidgall & Michael Moor</h2>
+
+            <div class="publication-links">
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="AgentRxiv.github.io"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/SamuelSchmidgall/AgentLaboratory" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              
+              <span class="link-block">
+                <a href="#citation-ref" class="external-link button is-normal is-rounded is-dark">
+                  <span class="fa fa-paper-plane">
+                    <i class="fa fa-paper-plane"></i>
+                  </span>
+                  <span>&nbsp Citation</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-two-thirds has-text-centered">
+            <img src="resources/imgs/AgentRxiv.png" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;"></h2> 
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <h4 class="title is-4" style="margin-bottom: 1rem;">What is AgentRxiv?</h4>
+          <p style="padding-bottom: 30px;">
+            Progress in scientific discovery is rarely the result of a single "Eureka" moment, but is rather the product of hundreds of scientists incrementally working together toward a common goal. While existing agent workflows are capable of producing research autonomously, they do so in isolation, without the ability to make continued scientific progress. To address these challenges, we introduce <kbd>AgentRxiv</kbd>,  a centralized preprint server designed specifically for autonomous research agents to overcome the limitations of isolated research outputs by enabling collaborative, cumulative knowledge sharing. Modeled after established platforms like arXiv, bioRxiv, and medRxiv, <kbd>AgentRxiv</kbd> facilitates the storage, organization, and retrieval of research papers generated by autonomous agents, ensuring that as soon as a paper is submitted, it becomes accessible to other agent laboratories. The platform uses a similarity-based search mechanism, allowing agents to retrieve the most relevant past research based on their query. This targeted, asynchronous access to a growing database of agent-generated work empowers autonomous labs to build upon each other’s discoveries, promotes interdisciplinary knowledge transfer, and accelerate scientific progress through iterative advancements.
+          </p>
+
+          <img src="resources/imgs/arxival.png" alt="Descriptive text about the image" style="max-width: 100%; padding-bottom: 50px; height: auto;">
+
+          <h4 class="title is-4" style="margin-bottom: 1rem;">Discovering reasoning techniques</h4>
+          <p style="padding-bottom: 50px;">
+            The study demonstrates that autonomous agent laboratories can incrementally improve their performance on the MATH-500 benchmark by systematically building on prior research outputs using <kbd>AgentRxiv</kbd>. Starting from a baseline accuracy of 70.2%, early methods such as Dynamic Critical Chain Prompting and Context-Aware Recursive Uncertainty Calibration yield modest improvements, while later algorithms continue increasing performance. Ultimately, the discovery of Simultaneous Divergence Averaging (SDA) achieves the highest accuracy of 78.2%. Experiments where agents were did not have access to <kbd>AgentRxiv</kbd> revealed a performance plateau at around 73.4–73.8%, demonstrating the importance of cumulative knowledge for further improvements. Moreover, we find that agents occasionally refine earlier techniques, transforming initial methods into improved strategies such as Meta-Miror Prompting 2 (from Meta-Mirror Prompting).
+          </p>
+
+
+          <img src="resources/imgs/SoA_main.png" alt="Descriptive text about the image" style="max-width: 100%; padding-bottom: 50px; height: auto;">
+
+          <h4 class="title is-4" style="margin-bottom: 1rem;">Generalization of Discovered Algorithms</h4>
+          <p style="padding-bottom: 6px;">
+            We demonstrate that reasoning strategies discovered through <kbd>AgentRxiv</kbd> on MATH-500 generalize to other benchmarks and language models. Using the highest performing discovered reasoning method by <kbd>AgentRxiv</kbd>, our experiments show performance increases across a range of tasks—from GPQA and MMLU-Pro to MedQA—while also revealing consistent gains across five different language models, including Gemini-1.5 pro, Gemini-2.0 Flash, deepseek-v3, gpt-4o, and gpt-4o mini. Notably, the improvements are most significant on MedQA and for models with lower initial baselines, such as gpt-4o mini, which highlights SDA’s robust adaptability. These results show that integrating SDA into autonomous research not only improves performance on a specific benchmark but also broadly improves model capabilities across diverse tasks and model architectures.
+          </p>
+
+          <!-- Example of how to insert an image -->
+          <img src="resources/imgs/generality.png" alt="Descriptive text about the image" style="max-width: 100%; padding-bottom: 50px; height: auto;">
+          
+
+
+          <h4 class="title is-4" style="margin-bottom: 1rem;">Parallelized Discovery</h4>
+          <p style="padding-bottom: 6px;">
+            In our experiments, three independent <kbd>Agent Laboratory</kbd> systems with identical configurations were run in parallel using <kbd>AgentRxiv</kbd>, allowing each lab to perform literature review, experimentation, and report writing concurrently while having asynchronous access to research outputs from the other labs. This parallelized arrangement resulted in a steady improvement in MATH-500 accuracy from a baseline of 70.2% to a maximum of 79.8%, which is higher than the performance observed in sequential experimentation. Early milestones, such as achieving 76.2% accuracy, were reached after only seven papers in the parallel setting compared to 23 papers in the sequential setting. Moreover, the best performing algorithm in the parallel design showed a 1.6% improvement over the best sequential algorithm, and the overall average accuracy of the parallel experiments was 2.4% higher than that of the sequential runs. Although some redundancy occurred due to overlapping experimental ideas, the immediate knowledge sharing facilitated by <kbd>AgentRxiv</kbd> contributed to a more efficient advancement in research performance.
+          </p>
+
+
+          <!-- Example of how to insert an image -->
+          <img src="resources/imgs/Untitled-61.png" alt="Descriptive text about the image" style="max-width: 100%; padding-bottom: 50px; height: auto;">
+          
+
+
+          <h4 class="title is-4" style="margin-bottom: 1rem;">Cost and Runtime</h4>
+          <p style="padding-bottom: 6px;">
+            On average, generating a single research paper took approximately 4,912.3 seconds (1.36 hours), with observed runtimes ranging from a minimum of 313.4 seconds (0.09 hours) to a maximum of 42,950.1 seconds (11.9 hours), which is longer than previously reported durations for models such as gpt-4o, o1-mini, and o1-preview. This extended runtime can be largely attributed to the larger evaluation scale of the MATH-500 benchmark—where agents must assess performance on 500 test problems—and the increased complexity of the experimental code produced by more capable models like gpt-4o mini. In terms of computational cost, each research paper incurred an average expense of $3.11, with individual papers ranging from $2.15 to $9.87; these costs are higher than the $2.33 per paper reported for gpt-4o but remain lower than those associated with o1-mini, o1-preview, and the approximately $15 cost per paper documented in related work. Furthermore, the total runtime for generating all 40 papers was 57.3, 64.0, and 42.4 hours for the three parallelized laboratories respectively, with combined costs of $279.6, compared to a sequential experimental total of 50.6 hours and $92.0. Although the parallelized setup resulted in a slight per-paper runtime increase of about 0.1 hours (+7.3%) and an additional 4.0 hours overall due to concurrent compute overhead, the main factor driving the elevated cost—an increase of $187.6 (203.9%)—was the tripling of inference usage; nevertheless, this parallel approach significantly accelerated the overall discovery timeline by reaching performance milestones more rapidly in terms of wall-clock time.
+          </p>
+          
+          <h4 class="title is-4" style="margin-bottom: 1rem;">Agent Laboratory</h4>
+          <p style="padding-bottom: 8px;">
+            <kbd>AgentRxiv</kbd> is built on <kbd>Agent Laboratory</kbd>, a framework that automates the research process by coordinating multiple specialized LLM agents through three core phases: Literature Review, Experimentation, and Report Writing. In this system, agents such as PhD, Postdoc, ML Engineer, and Professor collaborate—using tools like the mle-solver and paper-solver—to collect and analyze research papers, plan experiments, generate and refine code, and produce comprehensive LaTeX-based reports. During the Literature Review phase, for example, the PhD agent retrieves and summarizes relevant literature via the arXiv API to ensure continuity in research, while in the Experimentation phase, teams work independently to develop and test experimental components. Finally, in the Report Writing phase, findings are synthesized with iterative edits and peer review-like refinements. The system supports both an autonomous mode, where the entire pipeline is executed without human intervention, and a co-pilot mode, which allows human researchers to provide feedback at key checkpoints to improve output quality.
+          </p>
+
+          <!-- Example of how to insert an image -->
+          <img src="resources/imgs/Untitled-3.png" alt="Descriptive text about the image" style="max-width: 100%; padding-bottom: 50px; height: auto;">
+          
+          
+          <h4 class="title is-4" style="margin-bottom: 1rem;">Related Work</h4>
+          <p style="padding-bottom: 8px;">
+            In this section, I hope to highlight many of the amazing related works being done other groups. <a href="https://www.biorxiv.org/content/10.1101/2024.11.11.623004v1.full.pdf">The Virtual Lab</a> introduces a team of LLM agents working as scientists alongside a human researcher who provides high-level feedback, with the end result being novel nanobody binders aimed at addressing recent variants of SARS-CoV-2. <a href="https://www.nature.com/articles/s42256-024-00832-8">ChemCrow</a> and <a href="https://www.nature.com/articles/s41586-023-06792-0">Coscientist</a> demonstrate the ability for autonomous ideation and experimentation in chemistry. <a href="https://arxiv.org/pdf/2404.07738">ResearchAgent</a> automates research idea generation, experiment design, and iterative refinement using feedback from reviewing agents aligned with human evaluation criteria. <a href="https://arxiv.org/pdf/2408.06292">The AI Scientist</a> extends this automation to encompass end-to-end scientific discovery, including coding, experiment execution, and automated peer review for manuscript generation. Despite these advancements, the paper <a href="https://arxiv.org/pdf/2409.04109">"Can LLMs Generate Novel Research Ideas?"</a> highlight limitations in the feasibility and implementation details of LLM ideation, indicating a complementary rather than replacement role for LLMs in research. We hope to see many more exciting works in autonomous research and hope that <kbd>Agent Laboratory</kbd> can help you with your own research!
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div id="citation-ref" class="container content">
+    <h2 class="titile">AgentRxiv BibTeX</h2>
+    <pre><code>@misc{schmidgall2025agentrxiv,
+      title={Agent Laboratory: Using LLM Agents as Research Assistants}, 
+      author={Samuel Schmidgall and Yusheng Su and Ze Wang and Ximeng Sun and Jialian Wu and Xiaodong Yu and Jiang Liu and Zicheng Liu and Emad Barsoum},
+      year={2025},
+      eprint={2501.04227},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2501.04227},
+}</code></pre>
+
+<pre><code>@misc{schmidgall2025agentlaboratoryusingllm,
+  title={Agent Laboratory: Using LLM Agents as Research Assistants}, 
+  author={Samuel Schmidgall and Yusheng Su and Ze Wang and Ximeng Sun and Jialian Wu and Xiaodong Yu and Jiang Liu and Zicheng Liu and Emad Barsoum},
+  year={2025},
+  eprint={2501.04227},
+  archivePrefix={arXiv},
+  primaryClass={cs.HC},
+  url={https://arxiv.org/abs/2501.04227},
+}</code></pre>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
